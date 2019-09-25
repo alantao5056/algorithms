@@ -4,17 +4,15 @@
  */
 
 const countAndSay = function (n) {
-  let array = [];
   let s = '1';
   if (n === 1) {
     return '1';
   }
-  for (let i = 0; i < n; i++) {
-    array.push(next(s));
+  for (let i = 0; i < n - 1; i++) {
     s = next(s);
   }
 
-  return array[array.length - 2];
+  return s;
 
 };
 
