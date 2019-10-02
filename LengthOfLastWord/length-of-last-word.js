@@ -3,15 +3,16 @@
  * @return {number}
  */
 const lengthOfLastWord = function (s) {
-  let trim = false;
+  let letterFound = false;
   let result = '';
   for (let i = s.length - 1; i >= 0; i--) {
-    if (s[i] === ' ' && trim === true) {
-      break;
-    } else if (s[i] !== ' ') {
+    if (s[i] === ' ') {
+      if (letterFound) {
+        break;
+      }
+    } else {
       result = s[i] + result;
-      console.log(result);
-      trim = true;
+      letterFound = true;
     }
   }
   return result.length;
