@@ -30,7 +30,7 @@ describe('reverseInteger', () => {
     expect(reverse(-2)).toBe(-2);
   });
 
-  test('test -789', () => {
+  test.only('test -789', () => {
     expect(reverse(-789)).toBe(-987);
   });
 
