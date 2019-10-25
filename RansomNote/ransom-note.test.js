@@ -1,6 +1,6 @@
 const canConstruct = require('./ransom-note');
 
-describe('reverseInteger', () => {
+describe('ransomNote', () => {
 
   test('a and b', () => {
     expect(canConstruct('a', 'b')).toBeFalse();
@@ -10,8 +10,8 @@ describe('reverseInteger', () => {
     expect(canConstruct('aa', 'ab')).toBeFalse();
   });
 
-  test('aa and aab', () => {
-    expect(canConstruct('aa', 'aab')).toBeTrue();
+  test('aa and acacb', () => {
+    expect(canConstruct('aa', 'acacb')).toBeTrue();
   });
 
   test('abc and bca', () => {
