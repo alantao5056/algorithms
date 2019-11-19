@@ -14,4 +14,8 @@ describe('countPrimes', () => {
     expect(countPrimes(1000)).toBe(168);
   });
 
+  test('10000', () => {
+    expect(countPrimes(10000)).toBe(1229);
+  });
+
 });

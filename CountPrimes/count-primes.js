@@ -10,7 +10,7 @@ const countPrimes = function (n) {
     array.push(true);
   }
 
-  for (let i = 2; i < n; i++) {
+  for (let i = 2; i < Math.sqrt(n); i++) {
     let iMultiply = 2;
     if (array[i]) {
       while (iMultiply * i <= n) {
